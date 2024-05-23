@@ -9,12 +9,12 @@
 
         # applications
         lalt - return: open -n -a alacritty
-        lalt + cmd - f: open -n /Users/jklaiber/
+        lalt + cmd - f: open -n /Users/sdellsperger/
         lalt - f: alacritty -e ranger .
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
         # layouts
-        lalt - tab: /Users/jklaiber/.local/bin/ywm space layout cycle
+        lalt - tab: /Users/sdellsperger/.local/bin/ywm space layout cycle
 
         # swap windows
         lalt + shift - j: yabai -m window --swap prev || yabai -m window --swap last
@@ -24,8 +24,8 @@
         lalt - 0x2B: yabai -m display --focus next || yabai -m display --focus 1
         
         # focus windows
-        lalt - j: /Users/jklaiber/.local/bin/ywm window cycle backward
-        lalt - k: /Users/jklaiber/.local/bin/ywm window cycle forward
+        lalt - j: /Users/sdellsperger/.local/bin/ywm window cycle backward
+        lalt - k: /Users/sdellsperger/.local/bin/ywm window cycle forward
 
         # window resizing
         lalt - h: yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-30:0

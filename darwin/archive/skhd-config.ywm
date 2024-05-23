@@ -9,12 +9,12 @@
 
         # applications
         lalt - return: open -n -a alacritty
-        lalt + cmd - f: open -n /Users/jklaiber/
+        lalt + cmd - f: open -n /Users/sdellsperger/
         lalt - f: alacritty -e ranger .
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
         # layouts
-        lalt - tab: /Users/jklaiber/.local/bin/ywm space layout cycle
+        lalt - tab: /Users/sdellsperger/.local/bin/ywm space layout cycle
 
         #lalt - n: yabai -m window --focus stack.next
 
@@ -34,26 +34,26 @@
         lalt - 8: yabai -m space --switch s8
         lalt - 9: yabai -m space --switch s9
 
-        lalt + shift - 1: /Users/jklaiber/.local/bin/ywm window send-to-space s1
-        lalt + shift - 2: /Users/jklaiber/.local/bin/ywm window send-to-space s2
-        lalt + shift - 3: /Users/jklaiber/.local/bin/ywm window send-to-space s3
-        lalt + shift - 4: /Users/jklaiber/.local/bin/ywm window send-to-space s4
-        lalt + shift - 5: /Users/jklaiber/.local/bin/ywm window send-to-space s5
-        lalt + shift - 6: /Users/jklaiber/.local/bin/ywm window send-to-space s6
-        lalt + shift - 7: /Users/jklaiber/.local/bin/ywm window send-to-space s7
-        lalt + shift - 8: /Users/jklaiber/.local/bin/ywm window send-to-space s8
-        lalt + shift - 9: /Users/jklaiber/.local/bin/ywm window send-to-space s9
+        lalt + shift - 1: /Users/sdellsperger/.local/bin/ywm window send-to-space s1
+        lalt + shift - 2: /Users/sdellsperger/.local/bin/ywm window send-to-space s2
+        lalt + shift - 3: /Users/sdellsperger/.local/bin/ywm window send-to-space s3
+        lalt + shift - 4: /Users/sdellsperger/.local/bin/ywm window send-to-space s4
+        lalt + shift - 5: /Users/sdellsperger/.local/bin/ywm window send-to-space s5
+        lalt + shift - 6: /Users/sdellsperger/.local/bin/ywm window send-to-space s6
+        lalt + shift - 7: /Users/sdellsperger/.local/bin/ywm window send-to-space s7
+        lalt + shift - 8: /Users/sdellsperger/.local/bin/ywm window send-to-space s8
+        lalt + shift - 9: /Users/sdellsperger/.local/bin/ywm window send-to-space s9
 
         # focus windows
-        lalt - j: /Users/jklaiber/.local/bin/ywm window cycle backward
-        lalt - k: /Users/jklaiber/.local/bin/ywm window cycle forward
+        lalt - j: /Users/sdellsperger/.local/bin/ywm window cycle backward
+        lalt - k: /Users/sdellsperger/.local/bin/ywm window cycle forward
 
         # swap windows
         lalt + shift - j: yabai -m window --swap prev || yabai -m window --swap last
         lalt + shift - k: yabai -m window --swap next || yabai -m window --swap first
 
         # focus monitor (0x2B = ,)
-        lalt - 0x2B: /Users/jklaiber/.local/bin/ywm monitor cycle forward
+        lalt - 0x2B: /Users/sdellsperger/.local/bin/ywm monitor cycle forward
 
         # window resizing
         lalt - h: yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-30:0

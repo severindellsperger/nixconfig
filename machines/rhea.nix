@@ -18,11 +18,11 @@
 
   users = {
     users = {
-      jklaiber = {
+      sdellsperger = {
         shell = pkgs.zsh;
-        name = "jklaiber";
+        name = "sdellsperger";
         description = "Julian Klaiber";
-        home = "/Users/jklaiber";
+        home = "/Users/sdellsperger";
       };
     };
   };
@@ -34,7 +34,7 @@
   services.nix-daemon.enable = true;
 
   # networking = {
-  #   hostName = "jumac";
+  #   hostName = "rhea";
   # };
 
   # fonts = {

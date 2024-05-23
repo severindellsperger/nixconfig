@@ -3,8 +3,8 @@
 {
   programs.git = {
     enable = true;
-    userEmail = "julian@klaiber.me";
-    userName = "Julian Klaiber";
+    userEmail = "severin.dellsperger@gmail.com";
+    userName = "severindellsperger";
     ignores = [
       ".idea" ".vscode" ".vsc" ".vs" # IDEs
       ".DS_Store" # macOS

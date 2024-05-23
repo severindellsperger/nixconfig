@@ -10,13 +10,13 @@
     darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
   outputs = inputs@{ nixpkgs, home-manager, darwin, ... }: {
-    darwinConfigurations = let username = "jklaiber";
+    darwinConfigurations = let username = "sdellsperger";
     in {
-      jumac = darwin.lib.darwinSystem {
+      rhea = darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         pkgs = import nixpkgs { system = "aarch64-darwin"; };
         modules = [
-          ./machines/jumac.nix
+          ./machines/rhea.nix
           ./darwin/homebrew.nix
           ./darwin/skhd.nix
           home-manager.darwinModules.home-manager
@@ -24,7 +24,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.jklaiber.imports = [ 
+              users.sdellsperger.imports = [ 
                 ./home-manager 
                 ./darwin
               ];

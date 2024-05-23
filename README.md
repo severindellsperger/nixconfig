@@ -38,15 +38,15 @@ nix build .#darwinConfigurations.<hostname>.system
 
 ## Usage
 
-- To install a new package, add it to the `home-manager/default.nix` or `home-manager/applications/` file and run `nix build .#darwinConfigurations.jumac.system` again.
-- To update all packages, run `nix flake update && nix build .#darwinConfigurations.jumac.system`.
+- To install a new package, add it to the `home-manager/default.nix` or `home-manager/applications/` file and run `nix build .#darwinConfigurations.rhea.system` again.
+- To update all packages, run `nix flake update && nix build .#darwinConfigurations.rhea.system`.
 - To edit any configuration file, modify the corresponding file in the `home-manager/` or `darwin/` directory and run `darwin-rebuild switch --flake ~/nixconfig`.
 
 ### Update
 ```bash
 nix-channel --update
 nix --extra-experimental-features "nix-command flakes" flake update
-nix --extra-experimental-features "nix-command flakes" build .#darwinConfigurations.jumac.system --impure
+nix --extra-experimental-features "nix-command flakes" build .#darwinConfigurations.rhea.system --impure
 darwin-rebuild switch --flake ~/nixconfig --show-trace --impure
 ```
 

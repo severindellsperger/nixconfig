@@ -8,9 +8,9 @@
         lalt - q: skhd --key "cmd - w"
 
         # applications
-        lalt - return: open -n -a alacritty
-        lalt + cmd - f: open -n /Users/jklaiber/
-        lalt - f: alacritty -e ranger .
+        lalt - t: open -n -a alacritty
+        lalt + cmd - e: open -n /Users/sdellsperger/
+        lalt - e: alacritty -e ranger .
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
         '';

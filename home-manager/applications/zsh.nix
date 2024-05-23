@@ -9,7 +9,7 @@
         sessionVariables  =  {
             EDITOR  =  "nvim";
             VISUAL  =  "nvim";
-            KUBECONFIG  =   "$HOME/.kube/config-ins-stud:$HOME/.kube/config-ins-int:$HOME/.kube/config-ins-ext:$HOME/.kube/config-ins-dev";
+            KUBECONFIG = "$HOME/.kube/kubeconfig_cldop-stud-0:$HOME/.kube/talos-dev"
         };
 
         initExtraBeforeCompInit = ''
@@ -40,14 +40,9 @@
             egrep = "egrep --color=auto";
             fgrep = "fgrep --color=auto";
             kwhoami = "kubectl config current-context";
-            kint = "kubectl config use-context int";
-            kext = "kubectl config use-context ext";
-            kdev = "kubectl config use-context dev";
-            kstud = "kubectl config use-context stu";
             kex = "kubectl exec -it";
             cexit = "code . && exit";
             drmi = "docker rmi $(docker images -q)";
-            weather = "curl -4 http://wttr.in/Schaffhausen";
         };
 
         plugins  =  [

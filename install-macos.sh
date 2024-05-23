@@ -93,7 +93,7 @@ installation() {
 restore_nix_configuration() {
     confirm "Do you want to restore Nix configuration?"
     info "Restoring Nix configuration"
-    nix build .#darwinConfigurations.jumac.system
+    nix build .#darwinConfigurations.rhea.system
     ./result/sw/bin/darwin-rebuild switch --flake .
     completed "Nix configuration restored"
     post_restore

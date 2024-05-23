@@ -6,7 +6,7 @@
             contrastOpacity=188
             disabledTrayIcon=true
             drawColor=#2e303e
-            savePath=/Users/jklaiber/Downloads
+            savePath=/Users/sdellsperger/Downloads
             showDesktopNotification=false
             showHelp=false
             showStartupLaunchMessage=false
