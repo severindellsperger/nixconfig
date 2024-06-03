@@ -9,7 +9,7 @@
         sessionVariables  =  {
             EDITOR  =  "nvim";
             VISUAL  =  "nvim";
-            KUBECONFIG = "$HOME/.kube/kubeconfig_cldop-stud-0:$HOME/.kube/talos-dev";
+            KUBECONFIG = "$HOME/.kube/talos-dev.yaml";
         };
 
         initExtraBeforeCompInit = ''

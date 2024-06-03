@@ -53,7 +53,7 @@
         # Move to the next layout in the list.
         cycle-layout:
           mod: mod2
-          key: space
+          key: space 
 
         # Move to the previous layout in the list.
         cycle-layout-backward:
@@ -120,7 +120,7 @@
         # Focus the next screen in the list going clockwise.
         focus-screen-cw:
           mod: mod1
-          key: ','
+          key: '.'
 
         focus-screen-1:
           mod: <NONE>

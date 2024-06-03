@@ -14,10 +14,10 @@
       "google-chrome"
       "1password"
       "1password-cli"
+      "firefox"
     ];
     taps = [
       "koekeishiya/formulae" # yabai, skhd
-      "homebrew/cask-fonts"
       "jklaiber/homebrew-tap"
     ];
     brews = [

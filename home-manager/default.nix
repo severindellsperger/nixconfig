@@ -28,7 +28,6 @@ in {
       jq
       ranger
       ripgrep
-      pinentry
       gnupg
       hugo # go website generator
       sshpass # required for ansible

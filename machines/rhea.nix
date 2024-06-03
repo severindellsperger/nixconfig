@@ -21,7 +21,7 @@
       sdellsperger = {
         shell = pkgs.zsh;
         name = "sdellsperger";
-        description = "Julian Klaiber";
+        description = "Severin Dellsperger";
         home = "/Users/sdellsperger";
       };
     };
