@@ -40,7 +40,7 @@ in {
       golangci-lint
 
       # python stuff
-      python311
+      python313
       pipenv
       poetry
 
@@ -66,7 +66,7 @@ in {
 
     go = {
         enable = true;
-        package = pkgs.go_1_21;
+        package = pkgs.go_1_23;
     };
   };
 }

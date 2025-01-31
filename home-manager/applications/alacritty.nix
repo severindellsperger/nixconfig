@@ -28,8 +28,8 @@
 			family = "JetBrainsMono Nerd Font Mono";
 			style = "Bold Italic";
 		};
-		font.size = 14;
-		draw_bold_text_with_bright_colors = true;
+		font.size = 20;
+		colors.draw_bold_text_with_bright_colors = true;
 		colors.primary = {
 			background = "0x282c34";
 			foreground = "0xbbc2cf";

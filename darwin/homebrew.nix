@@ -15,6 +15,7 @@
       "1password"
       "1password-cli"
       "firefox"
+      "wireshark"
     ];
     taps = [
       "koekeishiya/formulae" # yabai, skhd
