@@ -5,17 +5,21 @@
     global.brewfile = true;
     masApps = { };
     casks = [
-      "flameshot"
-      "karabiner-elements"
-      "spaceid"
-      "amethyst"
-      "font-jetbrains-mono-nerd-font"
-      "visual-studio-code"
-      "google-chrome"
       "1password"
       "1password-cli"
+      "aerospace"
+      "discord"
       "firefox"
+      "flameshot"
+      "font-jetbrains-mono-nerd-font"
+      "gostty"
+      "google-chrome"
+      "karabiner-elements"
+      "raycast"
+      "slack"
+      "visual-studio-code"
       "wireshark"
+      "webex"
     ];
     taps = [
       "koekeishiya/formulae" # yabai, skhd
@@ -24,6 +28,9 @@
     brews = [
       "koekeishiya/formulae/skhd"
       "jklaiber/homebrew-tap/jumper"
+      "tio"
+      "uv"
+      "yazi"
     ];
   };
 }

@@ -1,6 +1,7 @@
 { config, pkgs, lib, ... }: {
   # backwards compatibility; don't change this
   system.stateVersion = 4;
+  system.primaryUser = "sdellsperger";
   
   environment = {
     variables = {
@@ -8,7 +9,6 @@
       VISUAL = "nvim";
     };
     shells = with pkgs; [ bash zsh ];
-    loginShell = pkgs.zsh;
     systemPackages = with pkgs; [
       pinentry_mac
     ];
@@ -31,7 +31,7 @@
     zsh.enable = true;
   };
 
-  services.nix-daemon.enable = true;
+  nix.enable = true;
 
   # networking = {
   #   hostName = "rhea";

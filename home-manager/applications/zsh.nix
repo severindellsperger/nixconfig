@@ -1,10 +1,13 @@
 { config, pkgs, lib, ... }: {
     programs.zsh  =  {
         enable  =  true;
-        enableAutosuggestions  =  true;
         enableCompletion  =  true;
         syntaxHighlighting.enable  =  true;
-        dotDir  =  ".config/zsh";
+        dotDir  =  "/Users/sdellsperger/.config/zsh";
+
+        autosuggestion = {
+            enable = true;
+        };
 
         sessionVariables  =  {
             EDITOR  =  "nvim";
@@ -14,10 +17,11 @@
 
         initExtraBeforeCompInit = ''
             export PATH="$HOME/.local/bin/:$PATH"
+            export PATH=$PATH:$(go env GOPATH)/bin
             eval "$(starship init zsh)"
-            eval "$(thefuck --alias)"
+            eval "$(pay-respects zsh --alias)"
+            eval "$(fzf --zsh)"
             zstyle :omz:plugins:ssh-agent agent-forwarding yes
-            source <(jumper completion zsh)
         '';
 
         oh-my-zsh  =  {

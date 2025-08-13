@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs, ... }: 
 
-{
-  # The `imports` list must be a top-level attribute to be evaluated correctly.
+let
   imports = [
     ./applications/ghostty.nix
     ./applications/starship.nix
@@ -10,9 +9,11 @@
     ./applications/nvim/nvim.nix
   ];
 
+in {
   # Don't change this when you change package input. Leave it alone.
   home.stateVersion = "22.11";
-
+  # specify my home-manager configs
+  inherit imports;
   home = {
     packages = with pkgs; [
       # Terminal helpers
@@ -66,8 +67,9 @@
     home-manager.enable = true;
 
     go = {
-      enable = true;
-      package = pkgs.go_1_24;
+        enable = true;
+        package = pkgs.go_1_24;
     };
   };
 }
+
