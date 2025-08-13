@@ -12,7 +12,7 @@
       "firefox"
       "flameshot"
       "font-jetbrains-mono-nerd-font"
-      "gostty"
+      "ghostty"
       "google-chrome"
       "karabiner-elements"
       "raycast"
