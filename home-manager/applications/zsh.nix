@@ -15,7 +15,7 @@
             KUBECONFIG = "$HOME/.kube/talos-dev.yaml";
         };
 
-        initExtraBeforeCompInit = ''
+        initContent = ''
             export PATH="$HOME/.local/bin/:$PATH"
             export PATH=$PATH:$(go env GOPATH)/bin
             eval "$(starship init zsh)"

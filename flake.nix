@@ -22,13 +22,18 @@
           home-manager.darwinModules.home-manager
           {
             home-manager = {
+              backupFileExtension = "bck";
+
               useGlobalPkgs = true;
               useUserPackages = true;
-              users.sdellsperger.imports = [ 
-                ./home-manager 
+              users.sdellsperger.imports = [
+                ./home-manager
                 ./darwin
               ];
             };
+          }
+          {
+            ids.gids.nixbld = 350;
           }
         ];
       };
