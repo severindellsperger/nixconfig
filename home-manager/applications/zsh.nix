@@ -32,6 +32,7 @@
                 "docker"
                 "kubectl"
                 "ssh-agent"
+                "fzf"
             ];
         };
 

@@ -28,6 +28,8 @@
     brews = [
       "koekeishiya/formulae/skhd"
       "jklaiber/homebrew-tap/jumper"
+      "git-lfs"
+      "ripgrep"
       "tio"
       "uv"
       "yazi"
