@@ -8,9 +8,9 @@
         lalt - q: skhd --key "cmd - w"
 
         # applications
-        lalt - t: open -n -a alacritty
+        lalt - t: open -n -a /Applications/Ghostty.app/Contents/MacOS/ghostty
         lalt + cmd - e: open -n /Users/sdellsperger/
-        lalt - e: alacritty -e ranger .
+        lalt - e: open -n -a /Applications/Ghostty.app/Contents/MacOS/ghostty --args -e yazi
         lalt - b: /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
         '';
